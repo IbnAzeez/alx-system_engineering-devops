@@ -1,2 +1,2 @@
 #!/bin/bash
-cat 6-third_line | grep |tail -1
+cat iacta | grep |tail -1
