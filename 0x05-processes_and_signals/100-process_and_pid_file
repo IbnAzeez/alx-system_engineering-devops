@@ -12,7 +12,7 @@ trap kill_process SIGTERM SIGQUIT
 function kill_process()
 {
 	echo "I hate the kill command"
-	sudo rm /var/run/holbertonscript.pid
+	sudo rm /var/run/myscript.pid
 	sudo kill -SIGKILL $$
 }
 
@@ -21,7 +21,7 @@ function ctrl_c()
 	echo "Y U no love me?!"
 }
 
-sudo sh -c 'echo $$ >> /var/run/holbertonscript.pid'
+sudo sh -c 'echo $$ >> /var/run/myscript.pid'
 
 while true
 do
